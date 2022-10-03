@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.btn__primary {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn__secondary {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+    &__arrow {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+}
+
+/* Direct override for link decoration in the browser stylesheet */
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+}

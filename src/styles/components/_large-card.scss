@@ -1,0 +1,72 @@
+.large__card {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem;
+    margin: 0 auto;
+
+    &__hero {
+        width: 50%;
+        margin: 0rem 5rem 0rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        & > * {
+            margin-bottom: 3rem;
+        }
+
+        &__section {
+            font-weight: 500;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &__text {
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+
+        &__title {
+            font-size: 3rem;
+            font-weight: 500;
+            color: #00154D;
+        }
+
+        &__subtitle {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #00154D;
+        }
+    }
+
+    &__btn {
+        width: 30rem;
+        text-align: left;
+        padding: 0rem;
+    }
+
+    &__image__container {
+        width: 50%;
+        height: 75rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+}
+
+.flipped {
+    flex-direction: row-reverse;
+    
+    & > .large__card__hero {
+        padding-left: 8rem;
+    }
+    
+}

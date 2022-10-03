@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA;
+    padding: 1rem;
+
+    // HEADER 
+    &__logo {
+        font-size: 2.4rem;
+        margin-right: 20rem;
+    }
+
+    // LINKS
+    &__links {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        margin-right: 3rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    &__active {
+        font-weight: 600;
+    }
+
+    &__inactive {
+        color: #6B6B6B;
+    }
+}

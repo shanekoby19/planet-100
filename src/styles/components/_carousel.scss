@@ -1,0 +1,17 @@
+.carousel {
+    position: relative;
+    display: flex;
+
+    margin-left: 10rem;
+    display: flex;
+
+    &__btns {
+        margin: 5rem 5rem 10rem 12rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__next {
+            margin-left: auto;
+        }
+    }
+}
