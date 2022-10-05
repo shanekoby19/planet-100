@@ -1,0 +1,33 @@
+/*
+-- Name      -- Size (Pixels)
+-- Mobile    -- 414
+-- Tab Port  -- 768
+-- Tab Land  -- 1366
+-- Big Desk  -- > 1920
+*/
+
+@mixin respond($mode) {
+    @if $mode == mobile {
+        @media(max-width: 28.875em) {
+            @content;
+        }
+    }
+
+    @if $mode == tab-port {
+        @media(max-width: 48em) {
+            @content;
+        }
+    }
+
+    @if $mode == tab-land {
+        @media(max-width: 83.375em) {
+            @content;
+        }
+    }
+
+    @if $mode == big-desk {
+        @media(min-width: 125em) {
+            @content;
+        }
+    }
+}

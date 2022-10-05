@@ -7,7 +7,20 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px = 1rem;
+ 
+
+    @include respond(tab-land) {
+        font-size: 50% // 8px = 1rem
+    }
+
+    @include respond(tab-port) {
+        font-size: 43.75% // 7px = 1rem
+    }
+
+    @include respond(mobile) {
+        font-size: 37.5% // 6px = 1rem
+    }
 }
 
 body {
@@ -23,6 +36,10 @@ body {
     color: white;
     border-radius: 1rem;
     cursor: pointer;
+
+    @include respond(mobile) {
+        font-size: 1rem;
+    }
 }
 
 .btn__secondary {
