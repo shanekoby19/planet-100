@@ -6,6 +6,12 @@
     margin: 3rem auto;
     position: relative;
 
+    @include respond(mobile) {
+        &:not(:last-child) {
+            margin-bottom: 10rem;
+        }
+    }
+
     &__hero {
         width: 50%;
         margin: 0rem 5rem 0rem 0rem;
@@ -31,6 +37,9 @@
 
         &__section {
             font-weight: 500;
+            @include respond(mobile) {
+                font-size: 1.8rem;
+            }
         }
 
         &__link {
@@ -46,6 +55,10 @@
             font-size: 3rem;
             font-weight: 500;
             color: #00154D;
+
+            @include respond(mobile) {
+                font-size: 3.6rem;
+            }
         }
 
         &__subtitle {

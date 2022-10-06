@@ -14,6 +14,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond (mobile) {
+            margin-bottom: 30rem;
+        }
+
         &__next {
             margin-left: auto;
         }
