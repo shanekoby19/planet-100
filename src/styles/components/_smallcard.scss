@@ -13,7 +13,7 @@
     }
 
     @include respond(mobile) {
-        width: 80%;
+        width: 50%;
     }
 
     &__image__container {

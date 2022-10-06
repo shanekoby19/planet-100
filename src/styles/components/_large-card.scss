@@ -99,6 +99,10 @@
     
     & > .large__card__hero {
         padding-left: 8rem;
+
+        @include respond(tab-port) {
+            padding-left: 0rem;
+        }
     }
     
 }

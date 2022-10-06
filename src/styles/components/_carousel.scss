@@ -5,6 +5,10 @@
     margin-left: 10rem;
     display: flex;
 
+    @include respond (tab-port) {
+        margin-left: 3rem;
+    }
+
     &__btns {
         margin: 5rem 5rem 10rem 5rem;
         display: flex;
