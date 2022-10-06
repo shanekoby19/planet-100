@@ -10,6 +10,10 @@
 
     background-color: rgba(41, 38, 38, 0.8);
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
     &__btn {
         font-size: 1.8rem;
         position: absolute;
@@ -18,5 +22,10 @@
         background-color: transparent;
         border: none;
         color: white;
+        z-index: 10;
+
+        @include respond(tab-port) {
+            top: 5%;
+        }
     }
 }

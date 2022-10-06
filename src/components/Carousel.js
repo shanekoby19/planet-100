@@ -3,19 +3,22 @@ import { useEffect, useState } from 'react';
 import SecondaryButton from './ButtonSecondary';
 
 const Carousel = ({ children }) => {
-    const [maxLeft, setMaxLeft] = useState(0);
+    const maxLeft = 0;
     const [maxRight, setMaxRight] = useState(0);
     const [currentX, setCurrentX] = useState(0);
+    const [shiftAmount, setShiftAmount] = useState(0);
 
     useEffect(() => {
         setMaxRight(document.getElementById('carousel').scrollWidth * -1 + document.getElementById('carousel').getBoundingClientRect().width - 110);
+        const screenWidth = window.screen.width;
+        setShiftAmount(screenWidth * 0.45 > 200 ? screenWidth * 0.45 : 300);
     }, [])
     
     const control = useAnimation();
 
     const moveCarouselLeft = () => {
         control.start({
-            x: currentX - 700 > maxRight ? currentX - 700 : maxRight,
+            x: currentX - shiftAmount > maxRight ? currentX - shiftAmount : maxRight,
             transition: {
                 type: "spring",
                 stiffness: 60
@@ -23,19 +26,19 @@ const Carousel = ({ children }) => {
         });
 
         // Update the state
-        currentX - 700 > maxRight ? setCurrentX(currentX - 700) : setCurrentX(maxRight);
+        currentX - shiftAmount > maxRight ? setCurrentX(currentX - shiftAmount) : setCurrentX(maxRight);
     }
 
     const moveCarouselRight = () => {
         control.start({
-            x: currentX + 700 < maxLeft ? currentX + 700 : maxLeft,
+            x: currentX + shiftAmount < maxLeft ? currentX + shiftAmount : maxLeft,
             transition: {
                 type: "spring",
                 stiffness: 60
             }
         }) 
 
-        currentX + 700 < maxLeft ? setCurrentX(currentX + 700) : setCurrentX(maxLeft)
+        currentX + shiftAmount < maxLeft ? setCurrentX(currentX + shiftAmount) : setCurrentX(maxLeft)
     }
 
 

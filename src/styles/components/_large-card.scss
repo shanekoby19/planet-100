@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     width: 90%;
-    padding: 3rem;
-    margin: 0 auto;
+    
+    margin: 3rem auto;
+    position: relative;
 
     &__hero {
         width: 50%;
@@ -11,6 +12,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include respond(tab-port) {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: 0rem 3rem;
+            justify-content: center;
+            z-index: 10;
+            align-items: center;
+            text-align: center;
+        }
         
 
         & > * {
@@ -40,6 +52,10 @@
             font-size: 2.2rem;
             font-weight: 300;
             color: #00154D;
+
+            @include respond(tab-port) {
+                width: 75%;
+            }
         }
     }
 
@@ -47,11 +63,23 @@
         width: 30rem;
         text-align: left;
         padding: 0rem;
+        background-color: transparent;
+
+        @include respond(tab-port) {
+            position: absolute;
+            bottom: 1rem;
+            right: 3rem;
+            text-align: right;
+        }
     }
 
     &__image__container {
         width: 50%;
         height: 75rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -59,6 +87,10 @@
         height: 100%;
         object-fit: cover;
         border-radius: 3rem;
+
+        @include respond(tab-port) {
+            opacity: 0.4;
+        }
     }
 }
 

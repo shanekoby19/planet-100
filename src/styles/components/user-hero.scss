@@ -1,5 +1,9 @@
 .hero {
     display: flex;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
     
     &__user {
         display: flex;
@@ -7,8 +11,17 @@
         align-items: center;
         flex: 1;
 
+        @include respond (tab-port) {
+            margin-bottom: 3rem;
+        }
+
+
         & > * {
             margin-bottom: 2rem;
+
+            @include respond (tab-port) {
+                margin-bottom: 0.5rem;
+            }
         }
 
         &__image {
