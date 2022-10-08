@@ -27,13 +27,13 @@
         margin-right: 3rem;
         font-size: 1.8rem;
         cursor: pointer;
-    }
 
-    &__active {
-        font-weight: 600;
-    }
-
-    &__inactive {
-        color: #6B6B6B;
+        &--active {
+            font-weight: 600;
+        }
+    
+        &--inactive {
+            color: #6B6B6B;
+        }
     }
 }

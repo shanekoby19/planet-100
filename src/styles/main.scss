@@ -1,5 +1,6 @@
 // MIXINS
 @import './mixins/respond';
+@import './mixins/animate';
 
 // BASE STYLES
 @import './base/base';
@@ -13,3 +14,5 @@
 @import './components/modal';
 @import './components/user-hero';
 @import './components/large-card';
+@import './components/home';
+@import './components/item-count';

@@ -1,7 +1,7 @@
 import ButtonSecondary from "./ButtonSecondary";
 
 const LargeCard = ({
-    img=<img></img>,
+    img=<img alt="empty"></img>,
     title='Title Text',
     subtitle='Sub Text',
     author='author',
@@ -17,7 +17,7 @@ const LargeCard = ({
                 <p 
                     className='large__card__hero__subtitle'
                 >
-                    {subtitle} created by <span className='large__card__hero__link__text'><a className='large__card__hero__link__text' href={link} target="_blank">{author}</a></span>
+                    {subtitle} created by <span className='large__card__hero__link__text'><a className='large__card__hero__link__text' href={link} target="_blank" rel="noreferrer">{author}</a></span>
                 </p>
                 <ButtonSecondary text='View Collection' additionalClasses=' large__card__btn'></ButtonSecondary>
             </div>

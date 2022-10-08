@@ -43,11 +43,50 @@
         margin: 0.5rem 0.5rem 0rem auto;
     }
 
+    // Buttons Containter
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0rem 2rem;
+        margin-bottom: 2rem;
+
+        @include respond (tab-land) {
+            flex-direction: column-reverse;
+        }
+    }
+
     &__btn {
         width: 80%;
-        margin: 0rem 2rem 1rem 0rem;
         background-color: white;
         align-self: flex-end;
         text-align: right;
+
+        @include respond(tab-land) {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__buy {
+            background-color: green;
+            width: 60%;
+            border: none;
+
+            @include respond(tab-land) {
+                width: 100%;
+                text-align: center;
+            }
+
+            @include keyframe(fadeIn) {
+                0% {
+                    opacity: 0;
+                }
+            
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @include animate(fadeIn, 3s)
+        }
     }
 }

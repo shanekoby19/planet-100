@@ -22,8 +22,10 @@ const Modal = ({ children }) => {
         display: 'none'
     }
 
+    
     useEffect(() => {
         control.start(openModal);
+        // eslint-disable-next-line
     }, [])
 
     return (

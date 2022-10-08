@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const HeroImage = () => {
     return (
         <div className='hero'>
-            <a className='hero__link' href='https://www.linkedin.com/in/jacobmolenick/' target="_blank">
+            <a className='hero__link' href='https://www.linkedin.com/in/jacobmolenick/' target="_blank" rel="noreferrer">
                 <motion.section 
                     className='hero__user'
                     initial={{
@@ -30,7 +30,7 @@ const HeroImage = () => {
                 </motion.section>
             </a>
 
-            <a className='hero__link' href='https://www.linkedin.com/in/shane-kobylecky/' target="_blank">
+            <a className='hero__link' href='https://www.linkedin.com/in/shane-kobylecky/' target="_blank" rel="noreferrer">
                 <motion.section 
                     className='hero__user'
                     initial={{
