@@ -10,7 +10,7 @@ const Landing = () => {
                 <PrimaryButton text='Download Free e-book'></PrimaryButton>
             </div>
             <div className='landing__image'>
-                <img src='https://ik.imagekit.io/skobylecky1/tr:w-1200/abstract-1.jpg'></img>
+                <img src='https://ik.imagekit.io/skobylecky1/tr:w-1200/abstract-1.jpg' alt='abstract planet'></img>
             </div>
         </div>
     )
