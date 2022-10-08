@@ -22,6 +22,7 @@
         background-color: transparent;
         border: none;
         color: white;
+        z-index: 20;
 
         @include respond(tab-port) {
             top: 5%;

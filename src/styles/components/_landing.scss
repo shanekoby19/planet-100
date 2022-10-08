@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: center;
 
-    @include respond(mobile) {
+    @include respond(tab-port) {
         height: 90vh;
+        flex-direction: column;
     }
     
     &__text {
@@ -18,6 +19,7 @@
             width: 100%;
             margin-right: 0rem;
             text-align: center;
+            margin-bottom: 5rem;
         }
 
         @include respond(mobile) {
@@ -81,6 +83,10 @@
         }
 
         @include respond(tab-port) {
+            width: 80%;
+        }
+
+        @include respond(mobile) {
             display: none;
         }
     }
