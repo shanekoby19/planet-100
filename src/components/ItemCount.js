@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 const ItemCount = ({ itemName }) => {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
 
     const itemCountControl = useAnimation();
 
