@@ -20,7 +20,7 @@ const SmallCard = ({
                 y: "-20px",
                 boxShadow: "0px 20px 40px 2px rgba(0, 0, 0, 0.4)"
             }}
-            onTap={{
+            whileTap={{
                 y: "-20px",
                 boxShadow: "0px 20px 40px 2px rgba(0, 0, 0, 0.4)"
             }}
