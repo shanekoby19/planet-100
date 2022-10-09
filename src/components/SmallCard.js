@@ -20,6 +20,10 @@ const SmallCard = ({
                 y: "-20px",
                 boxShadow: "0px 20px 40px 2px rgba(0, 0, 0, 0.4)"
             }}
+            onTap={{
+                y: "-20px",
+                boxShadow: "0px 20px 40px 2px rgba(0, 0, 0, 0.4)"
+            }}
             onMouseEnter={() => setShowBuyButton(true)}
             onMouseLeave={() => setShowBuyButton(false)}
         >
