@@ -1,17 +1,26 @@
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { motion } from 'framer-motion';
+
+import CartContext from '../context/CartContext';
 import PrimaryButton from './PrimaryButton';
 import ItemCount from './ItemCount';
 
 const Nav = () => {
     const activeClassName = 'nav__link nav__link--active';
-    const inactiveClassName = 'nav__link nav__link--inactive'
+    const inactiveClassName = 'nav__link nav__link--inactive';
+
+    const { cartAnimationControl } = useContext(CartContext)
 
     return (
-        <div className='nav'>
+        <motion.div 
+            className='nav'
+            animate={cartAnimationControl}
+        >
             <h1 className='nav__logo'>Planet (100)</h1>
             <ul className='nav__links'>
-                <NavLink 
-                    to='/home'
+                <NavLink
+                    to='/'
                     className={({ isActive }) => isActive ? activeClassName : inactiveClassName }
                 >Home</NavLink>
                 <NavLink 
@@ -29,7 +38,7 @@ const Nav = () => {
                 ><ItemCount itemName='Wallet'/></NavLink>
                 <PrimaryButton text='Sign Up Now'/>
             </ul>
-        </div>
+        </motion.div>
     )
 }
 

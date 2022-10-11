@@ -1,13 +1,13 @@
 const PrimaryButton = ({
     text = 'button', 
     additionalClasses = '',
-    callbackFn = () => undefined
+    onClick = () => undefined
 }) => {
 
     return (
         <button 
             className={'btn__primary' + additionalClasses}
-            onClick={callbackFn}
+            onClick={onClick}
         >{text}</button>
     )
 }

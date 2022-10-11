@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './styles/main.scss';
+import { CartProvider } from './context/CartContext';
 import Home from './components/Home/Home';
 import Sale from './components/Sale/Sale';
 import Foundation from "./components/Foundation/Foundation";
@@ -12,6 +13,7 @@ import Wallet from './components/Wallet/Wallet';
 const router = createBrowserRouter([
     {
         path: '/',
+        exact: true,
         element: <Home />,
     },
     {
@@ -31,7 +33,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+        <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );
 
