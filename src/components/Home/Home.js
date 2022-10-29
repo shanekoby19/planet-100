@@ -2,7 +2,7 @@ import Nav from '../Nav';
 import Landing from '../Landing';
 import SmallCard from '../SmallCard';
 import Carousel from '../Carousel';
-import Modal from '../Modal';
+import Modal from '../Modal/Modal';
 import HeroImage from '../HeroImage';
 import LargeCard from '../LargeCard';
 
