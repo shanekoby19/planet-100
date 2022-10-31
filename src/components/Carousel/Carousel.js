@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import SecondaryButton from './ButtonSecondary';
+import SecondaryButton from '../ButtonSecondary';
 
 const Carousel = ({ children }) => {
     const maxLeft = 0;

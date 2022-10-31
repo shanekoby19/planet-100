@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import CartContext from '../context/CartContext';
 import PrimaryButton from './PrimaryButton';
-import ItemCount from './ItemCount';
+import ItemCount from './ItemCount/ItemCount';
 
 const Nav = () => {
     const activeClassName = 'nav__link nav__link--active';

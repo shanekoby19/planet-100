@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
-import CartContext from '../context/CartContext';
+import CartContext from '../../context/CartContext';
 
 const ItemCount = ({ itemName }) => {
     const { cartItems } = useContext(CartContext);
