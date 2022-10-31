@@ -1,10 +1,10 @@
-import Nav from '../Nav';
-import Landing from '../Landing';
-import SmallCard from '../SmallCard';
-import Carousel from '../Carousel';
-import Modal from '../Modal/Modal';
-import HeroImage from '../HeroImage';
-import LargeCard from '../LargeCard';
+import Nav from '../../components/Nav';
+import Landing from '../../components/Landing';
+import SmallCard from '../../components/SmallCard';
+import Carousel from '../../components/Carousel';
+import Modal from '../../components/../components/Modal/Modal';
+import HeroImage from '../../components/HeroImage';
+import LargeCard from '../../components/LargeCard';
 
 const Home = () => {
     return (

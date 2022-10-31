@@ -5,10 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './styles/main.scss';
 import { CartProvider } from './context/CartContext';
-import Home from './components/Home/Home';
-import Sale from './components/Sale/Sale';
-import Foundation from "./components/Foundation/Foundation";
-import Wallet from './components/Wallet/Wallet';
+import Home from './pages/Home/Home';
+import Sale from './pages/Sale/Sale';
+import Foundation from "./pages/Foundation/Foundation";
+import Wallet from './pages/Wallet/Wallet';
 
 const router = createBrowserRouter([
     {
